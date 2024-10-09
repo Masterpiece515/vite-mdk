@@ -26,7 +26,6 @@ body {
   padding: right 24px;;
 }
 .header__navigation--item  {
-  height: 52px;
 
 }
 .planset{
@@ -87,11 +86,14 @@ body {
   border-radius: 5px;
 }
 
-@media (min-width: 320px) {
-.planset{
-  display: flex;
+
+.moba{
+  display: none;
+  @media (min-width:768px)  {   
+    display: flex;
+  }
 }
-  }  
+
   .header__logo {
     width: 150px; 
   }
@@ -113,18 +115,17 @@ body {
   .services__image {
     width: 100%;
   }
-.planset  {
-  display: none;
-}
 
-@media (min-width: 768px) {
   .planset{
     display: flex;
+    padding-right: 16px;
   }
   
-}
 .Pomogite{
   display: flex;
   justify-content: space-between;
-align-items: center;
-}
+  align-items: center;
+  width: 100%;
+  padding-left: 16px;
+  height: 88px;
+} 
