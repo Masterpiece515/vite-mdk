@@ -18,17 +18,17 @@ body {
   align-items: center;
   width: 100%;
 }
-.header__navigation {
+.header-nav {
   list-style-type: none !important;
   display: flex;
   gap: 10px;
   align-items: center;
   padding: right 24px;;
 }
-.header__navigation--item  {
+.header-nav--item  {
 
 }
-.planset{
+.tablet{
   list-style-type: none !important;
   display: flex;
   gap: 10px;
@@ -43,16 +43,16 @@ body {
   width: 100px;
   height: auto;
 }
-.services {
+.main {
   padding: 20px;
   max-width: 600px;
   margin: 0 auto;
 }
-.services h1 {
+.main h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-.services__button {
+.main__button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #e6f7f5;
@@ -63,7 +63,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.services__description {
+.main__description {
   background-color: #fff;
   padding: 15px;
   border-left: 4px solid #f7cb2e;
@@ -76,18 +76,18 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.services__image {
+.main__image {
  display: none;
   justify-content: center;
   margin-top: 20px;
 }
-.services__image img {
+.main__image img {
   width: 80%;
   border-radius: 5px;
 }
 
 
-.moba{
+.screen-1{
   display: none;
   @media (min-width:768px)  {   
     display: flex;
@@ -98,30 +98,30 @@ body {
     width: 150px; 
   }
 
-  .services h1 {
+  .main h1 {
     font-size: 20px;
   }
 
-  .services__button {
+  .main__button {
     width: 100%;
     text-align: center;
     font-size: 14px;
   }
 
-  .services__description {
+  .main__description {
     font-size: 14px;
   }
 
-  .services__image {
+  .main__image {
     width: 100%;
   }
 
-  .planset{
+  .tablet{
     display: flex;
     padding-right: 16px;
   }
   
-.Pomogite{
+.app{
   display: flex;
   justify-content: space-between;
   align-items: center;
