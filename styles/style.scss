@@ -1,3 +1,8 @@
+@import "/styles/variables";
+li{
+  list-style: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,9 +69,7 @@ body {
   margin-bottom: 20px;
 }
 .services__description {
-  background-color: #fff;
   padding: 15px;
-  border-left: 4px solid #f7cb2e;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
@@ -89,7 +92,7 @@ body {
 
 .moba{
   display: none;
-  @media (min-width:768px)  {   
+  @media (min-width:$tablet-width)  {   
     display: flex;
   }
 }
@@ -128,4 +131,71 @@ body {
   width: 100%;
   padding-left: 16px;
   height: 88px;
+  @media(min-width:$desktop-width){
+    display: none;
+  }
 } 
+.desktop-header{
+  &--justify{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    justify-content: space-between;
+    @media(min-width: $desktop-width){
+      display: flex;
+    }
+  }
+  &--header{
+    display: flex;
+    gap:118px;
+    padding-left: 22px;
+    align-items: center;
+    padding-top: 30px;
+  }
+  &--text{
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+    padding-left: 20px;
+    padding-top:37px;
+    font-family:'TT Lakes';
+  }
+  &--icon{
+    display: flex;
+    gap: 16px;
+    padding-left: 20px;
+    
+  }
+  &--mail{
+    font-family: 'TT Lakes';
+    padding-left: 20px;
+    padding-top: 16px;
+    font-size: 16px;
+  }
+  &--nomep{
+    font-family: 'TT Lakes';
+    padding-left: 20px;
+    padding-top: 16px;
+    font-size: 24px;
+    font-weight: 700;
+
+  }
+  &--lank{
+    display: flex;
+    font-family: 'TT Lakes';
+    gap:7px;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 16px;
+  }
+}
+.da-xz{
+  @media(min-width:$desktop-width){
+    display: flex;
+
+  }
+  
+}
