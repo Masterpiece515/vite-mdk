@@ -201,11 +201,14 @@ body {
 }
 .menu{
   display: none;  
+
   &--header{
     display: flex;
-    padding-left: 22px;
+    padding-left: 16px;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 24px;
+    justify-content:space-between;
+    padding-right: 16px;
   }
 }
 .menu_open{
@@ -214,8 +217,15 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background-color: #2e87f7;
+    background-color: #fefefe;
     top:0;
     left:0;
     z-index: 1;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px 17px rgba(34, 60, 80, 0.23);
+}
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
