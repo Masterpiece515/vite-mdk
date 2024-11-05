@@ -1,0 +1,43 @@
+@import "/styles/variables";
+.log{
+   &--text {
+   display: flex;
+   gap: 30px;
+   margin-top: 42px;
+   }
+}
+.bludivider{
+   width: 4px;
+   height: 36px;
+   background-color:$third-color;
+   border-radius: 2px;
+   
+}
+.pon{
+   font-weight: 400;
+   color: $text-color;
+   letter-spacing: 0.2px;
+   font-size: 14px;
+   height: 90px;
+   width: 288px;
+   padding: 16px 16px 16px;
+   @media (min-width: $desktop-width)   {
+      width: 490px;
+      height: auto;
+   }
+   @media (min-width: $tablet-width)   {
+      width: 312px;
+      height: auto;
+   }
+   &1{
+      display: none;
+      padding-top: 0;
+      height: auto;
+      @media (min-width: $tablet-width) {
+       display: flex;
+       width: 312px;
+       
+      }
+   }
+
+}
