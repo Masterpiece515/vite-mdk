@@ -178,3 +178,41 @@ body {
   align-items: center;
   gap: 16px;
 }
+.gachi  {
+  @media (min-width:$tablet-width){
+    display: flex;
+    justify-content: space-between;
+    padding-right: 28px
+  }
+}
+.gachi img{
+  width: 100%;
+  padding-top:56px;
+  @media (min-width:$desktop-width) {  
+    width: 100%;
+    
+  }
+  @media (min-width:$tablet-width) {  
+    width: 100%;
+    
+  }
+  
+}
+.pin  {
+ display: flex;
+ padding-left: 48px;
+ @media (min-width:$tablet-width) {
+  display: flex;
+  padding-left: 57px;
+ }
+ @media (min-width:$desktop-width) {
+  display: flex;
+  padding-left: 64px;
+  
+ }
+}
+.pin img{
+  width: 7px;
+  padding-top: 8px;
+  margin-right: 16px;
+}
