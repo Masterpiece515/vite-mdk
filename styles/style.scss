@@ -1,8 +1,12 @@
 @import "/styles/variables";
 @import "./service.scss";
 @import "./swiper.scss";
-li{
+li {
   list-style: none;
+}
+
+html {
+  width: 100%;
 }
 
 * {
@@ -13,7 +17,7 @@ li{
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   color: #333;
 }
 .header {
@@ -31,17 +35,16 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  padding: right 24px;;
+  padding: right 24px;
 }
-.header__navigation--item  {
-
+.header__navigation--item {
 }
-.planset{
+.planset {
   list-style-type: none !important;
   display: flex;
   gap: 10px;
   align-items: center;
-  padding: right 24px;;
+  padding: right 24px;
 }
 .header__logo {
   flex-grow: 1;
@@ -52,167 +55,164 @@ body {
   height: auto;
 }
 
-
-.moba{
+.moba {
   display: none;
-  @media (min-width:$tablet-width)  {   
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-  .header__logo {
-    width: 150px; 
-  }
+.header__logo {
+  width: 150px;
+}
 
-  .planset{
-    display: flex;
-    padding-right: 16px;
-  }
-  
-.Pomogite{
+.planset {
+  display: flex;
+  padding-right: 16px;
+}
+
+.Pomogite {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-left: 16px;
   height: 88px;
-  @media(min-width:$desktop-width){
+  @media (min-width: $desktop-width) {
     display: none;
   }
-} 
-.desktop-header{
-  &--justify{
+}
+.desktop-header {
+  &--justify {
     display: none;
     flex-direction: column;
     width: 300px;
     height: 100vh;
     background-color: white;
     justify-content: space-between;
-    @media(min-width: $desktop-width){
+    @media (min-width: $desktop-width) {
       display: flex;
     }
   }
-  &--header{
+  &--header {
     display: flex;
-    gap:118px;
+    gap: 118px;
     padding-left: 22px;
     align-items: center;
     padding-top: 30px;
     padding-right: 22px;
   }
-  &--text{
+  &--text {
     display: flex;
     flex-direction: column;
-    gap:28px;
+    gap: 28px;
     padding-left: 20px;
-    padding-top:37px;
-    font-family:'TT Lakes';
+    padding-top: 37px;
+    font-family: "TT Lakes";
   }
-  &--icon{
+  &--icon {
     display: flex;
     gap: 16px;
     padding-left: 20px;
-    
   }
-  &--mail{
-    font-family: 'TT Lakes';
+  &--mail {
+    font-family: "TT Lakes";
     padding-left: 20px;
     padding-top: 16px;
     font-size: 16px;
   }
-  &--nomep{
-    font-family: 'TT Lakes';
+  &--nomep {
+    font-family: "TT Lakes";
     padding-left: 20px;
     padding-top: 16px;
     font-size: 24px;
     font-weight: 700;
-
   }
-  &--lank{
+  &--lank {
     display: flex;
-    font-family: 'TT Lakes';
-    gap:7px;
+    font-family: "TT Lakes";
+    gap: 7px;
     font-size: 16px;
     padding-top: 40px;
     padding-left: 20px;
     padding-bottom: 16px;
   }
 }
-.da-xz{
-  @media(min-width:$desktop-width){
+.da-xz {
+  @media (min-width: $desktop-width) {
     display: flex;
-
   }
-  
 }
-.menu{
-  display: none;  
+.menu {
+  display: none;
 
-  &--header{
+  &--header {
     display: flex;
     padding-left: 16px;
     align-items: center;
     padding-top: 24px;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-right: 16px;
   }
 }
-.menu_open{
-    height: 100vh;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: #fefefe;
-    top:0;
-    left:0;
-    z-index: 1;
-    justify-content: space-between;
-    box-shadow: 0px 0px 20px 17px rgba(34, 60, 80, 0.23);
-    @media (min-width:$desktop-width){
-      display: none;
-    }
+.menu_open {
+  height: 100vh;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #fefefe;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px 17px rgba(34, 60, 80, 0.23);
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
-.flex{
+.flex {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.gachi  {
-  @media (min-width:$tablet-width){
+.gachi {
+  align-items: center;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-right: 28px
+    margin-top: 32px;
   }
 }
-.gachi img{
-  width: 100%;
-  padding-top:56px;
-  @media (min-width:$desktop-width) {  
-    width: 100%;
-    
-  }
-  @media (min-width:$tablet-width) {  
-    width: 100%;
-    
-  }
-  
-}
-.pin  {
- display: flex;
- padding-left: 48px;
- @media (min-width:$tablet-width) {
+
+.pin {
   display: flex;
-  padding-left: 57px;
- }
- @media (min-width:$desktop-width) {
-  display: flex;
-  padding-left: 64px;
-  
- }
+  padding-left: 48px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-left: 57px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 64px;
+  }
 }
-.pin img{
+.pin img {
   width: 7px;
   padding-top: 8px;
   margin-right: 16px;
+}
+.jsfhj p {
+  display: flex;
+  color: #7e7e82;
+  width: 338px;
+  padding-left: 29px;
+}
+.jsfhj {
+  width: 100%;
+  height: 56px;
+  background-color: white;
+  align-content: center;
 }

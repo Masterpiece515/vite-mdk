@@ -21,11 +21,11 @@
    width: 288px;
    padding: 16px 16px 16px;
    @media (min-width: $desktop-width)   {
-      width: 490px;
+      width: 100%;
       height: auto;
    }
    @media (min-width: $tablet-width)   {
-      width: 312px;
+      width: 100%;
       height: auto;
    }
    &1{
