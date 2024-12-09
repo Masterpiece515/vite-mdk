@@ -82,6 +82,13 @@ body {
     display: none;
   }
 }
+.desktop-header--text--item:hover {
+  border: 3px solid #b8ffec;
+  border-radius: 6px;
+  background-color: #ffffff;
+  -webkit-transition: background-color 1s, border 1s;
+  transition: background-color 1s, border 1s;
+}
 .desktop-header {
   &--justify {
     display: none;
@@ -110,6 +117,7 @@ body {
     padding-left: 20px;
     padding-top: 37px;
     font-family: "TT Lakes";
+    cursor: pointer;
   }
   &--icon {
     display: flex;
@@ -156,7 +164,7 @@ body {
     padding-right: 16px;
   }
 }
-.menu__leftside{
+.menu__leftside {
   height: 100vh;
   width: 320px;
   display: flex;
@@ -192,6 +200,9 @@ body {
     justify-content: space-between;
     margin-top: 32px;
   }
+}
+.gachi img {
+  width: 100%;
 }
 
 .pin {
@@ -260,7 +271,7 @@ body {
     }
   }
   &_container {
-    width: auto;
+    width: 240px;
     height: 72px;
     gap: 0px;
     border-radius: 6px;
@@ -315,7 +326,7 @@ body {
     display: grid;
   }
   &--box {
-    width: auto;
+    width: 240px;
     height: 160px;
     gap: 0px;
     border-radius: 6px;
@@ -347,9 +358,12 @@ body {
 .subtitle__readmore {
   padding: 0px 32px;
   &--list {
-    display: flex;
+    display: none;
     padding-left: 48px;
     gap: 8px;
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 }
 .dataTable {
@@ -630,16 +644,14 @@ td {
   }
 }
 
-.obwaga{
-  @media (min-width:$desktop-width) {
+.obwaga {
+  @media (min-width: $desktop-width) {
     margin-left: 300px;
-    
   }
-
 }
-.white{
+.white {
   background-color: #fefefe;
   height: 100%;
-width: 100%;
-z-index: 2;
+  width: 100%;
+  z-index: 2;
 }
