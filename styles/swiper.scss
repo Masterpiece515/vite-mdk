@@ -55,7 +55,7 @@
   }
   
 .main__menu--slider--item-label {
-    padding: 0px 16px;
+    padding:  16px;
     border: 3px solid transparent;
     font-size: 16px;
     cursor: pointer;
@@ -84,6 +84,7 @@
     border: 3px solid #d9fff5;
   }
   .myswiper {
+    padding-left: 16px;
     height: 100px;
     margin-top: 16px;
     @media (min-width: $tablet-width) {
@@ -120,6 +121,7 @@
             &--items{
                 display: flex;
                 height: 138px;
+                padding-top: 16px;
             }
         }
     }   
@@ -127,6 +129,7 @@
 
 .swiper-pagination{
     bottom: 0 !important;
+    padding-left: 16px;
 }
 
 .swiper-pagination-bullet-active{
@@ -140,4 +143,26 @@
 
 .myswiper1{
     height: 205px;
+
+}
+
+.myswiper-wrapper{
+  padding-left: 16px;
+}
+
+.subtitle_show {
+  font-family: "TT Lakes";
+font-weight: 400;
+color: $text-color;
+letter-spacing: 0.2px;
+font-size: 14px;
+padding: 0px 24px 16px;
+@media (min-width: $desktop-width){
+  height: auto;
+  padding: 0 32px 16px;
+}
+}
+
+.subtitle_1{
+  display: none;
 }

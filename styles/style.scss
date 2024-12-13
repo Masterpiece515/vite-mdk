@@ -5,6 +5,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 html {
   width: 100%;
 }
@@ -84,6 +89,12 @@ body {
   }
 }
 .desktop-header--text--item:hover {
+  color: #7e7e82;
+  border-radius: 6px;
+  -webkit-transition: background-color 1s, border 1s;
+  transition: background-color 1s, border 1s;
+}
+.desktop-header--lank--item:hover {
   color: #7e7e82;
   border-radius: 6px;
   -webkit-transition: background-color 1s, border 1s;
@@ -194,7 +205,6 @@ body {
   gap: 16px;
 }
 .gachi {
-  align-items: center;
   margin-top: 24px;
 
   @media (min-width: $tablet-width) {
@@ -204,7 +214,8 @@ body {
   }
 }
 .gachi img {
-  width: 100%;
+  width: 60%;
+  align-items: center;
 }
 
 .pin {
@@ -286,15 +297,6 @@ body {
     justify-content: space-between;
     border: 1px solid white;
     cursor: pointer;
-    &:hover {
-      transition: border 0.5s;
-      border: 1px solid#f1d1da;
-      & > .container {
-        transition: background-color 0.5s, border 0.5s;
-        background-color: #ffb3ca;
-        border: 2px solid #ffb3ca;
-      }
-    }
 
     &--desktop {
       @media (min-width: 1410px) {
@@ -307,6 +309,11 @@ body {
       }
     }
   }
+}
+
+.container:hover img {
+  background-color: #1b1c21;
+  border-radius: 50%;
 }
 
 .test_menu__whiteshit {
@@ -607,9 +614,12 @@ td {
   gap: 6px;
   padding-left: 16px;
   padding-top: 16px;
-  color: $text-color;
+  color: black;
+  text-decoration: none;
   @media (min-width: $desktop-width) {
     padding-left: 32px;
+    text-decoration: none;
+    color: black;
   }
 }
 .swiper-services {
@@ -638,11 +648,11 @@ td {
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 12px;
-    font-size: 12px;
+    font-size: 10px;
   }
   &_butpos {
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
   }
 }
 
@@ -668,7 +678,7 @@ td {
     display: flex;
     width: 40px;
     height: 40px;
-    background-color:  #FF3E79;
+    background-color: #ff3e79;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -718,6 +728,31 @@ td {
   position: fixed;
 }
 
+@media (min-width: 320px) {
+  .call {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .message_tablet {
+    display: none;
+  }
+}
+/////////////////////////////////////
+@media (min-width: $tablet-width) {
+  .call {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .message_tablet {
+    display: flex;
+  }
+}
+/////////////////////////////////////
+
 .message_menu--text--container {
   display: flex;
   gap: 12px;
@@ -735,7 +770,7 @@ td {
 .divider2 {
   width: 4px;
   height: 36px;
-  background-color: #41F6D7;
+  background-color: #41f6d7;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -777,7 +812,7 @@ td {
 }
 
 .message_menu--red {
-  color:  #FF3E79;
+  color: #ff3e79;
   display: inline;
 }
 
@@ -785,7 +820,7 @@ td {
   display: flex;
   padding-left: 12px;
   padding-right: 12px;
-  background-color:  #FF3E79;
+  background-color: #ff3e79;
   width: 136px;
   height: 32px;
   align-items: center;
@@ -796,5 +831,41 @@ td {
   margin-top: 23px;
   @media (min-width: $desktop-width) {
     margin-left: 248px;
+  }
+}
+
+.white {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.call_menu {
+  display: none;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  &_close {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #ff3e79;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 100%;
+    z-index: 7;
+    margin-top: 24px;
+    margin-left: 16px;
+    cursor: pointer;
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      margin-left: -70px;
+      margin-top: 34px;
+    }
   }
 }
